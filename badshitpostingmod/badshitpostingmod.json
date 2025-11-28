@@ -1,0 +1,17 @@
+{
+  "id": "badshitpostingmod",
+  "name": "BAD SHITPOSTING MOD",
+  "author": [
+    "averange youtube channel"
+  ],
+  "description": "this mod add joker whit stupid effects because funny",
+  "prefix": "badshit",
+  "main_file": "main.lua",
+  "version": "1.2.3",
+  "priority": 0,
+  "badge_colour": "7b36d6",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0827c)"
+  ]
+}
