@@ -23,7 +23,7 @@ SMODS.Joker{ --CANIO+
     },
     pos = {
         x = 4,
-        y = 3
+        y = 4
     },
     display_size = {
         w = 71 * 1, 
@@ -31,7 +31,7 @@ SMODS.Joker{ --CANIO+
     },
     cost = 30,
     rarity = "badshit_omega",
-    blueprint_compat = false,
+    blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,

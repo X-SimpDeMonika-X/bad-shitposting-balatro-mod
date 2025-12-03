@@ -3,7 +3,8 @@ SMODS.Joker{ --CHICOT+
     key = "chicot",
     config = {
         extra = {
-            odds = "2"
+            repetitions = 3,
+            odds = 2
         }
     },
     loc_txt = {
@@ -18,7 +19,7 @@ SMODS.Joker{ --CHICOT+
     },
     pos = {
         x = 3,
-        y = 3
+        y = 4
     },
     display_size = {
         w = 71 * 1.25, 
@@ -84,7 +85,7 @@ SMODS.Joker{ --CHICOT+
                             end
                         end
                     }))
-                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Win!", colour = G.C.ORANGE})
+                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "fuck you", colour = G.C.ORANGE})
                 end
             end
         end

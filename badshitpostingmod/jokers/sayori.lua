@@ -19,7 +19,7 @@ SMODS.Joker{ --sayori
         }
     },
     pos = {
-        x = 0,
+        x = 3,
         y = 0
     },
     display_size = {

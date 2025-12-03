@@ -13,7 +13,7 @@ SMODS.Joker{ --MONIKA
         ['name'] = 'MONIKA',
         ['text'] = {
             [1] = 'retriggers all scoring cards and get a hangman at the end of hand',
-            [2] = 'Gains {C:white}{X:red,C:white}x0.5{}{} Mult for each card destroyed',
+            [2] = 'Gains {X:red,C:white}X0.5{} Mult for each card destroyed',
             [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{}){}'
         },
         ['unlock'] = {
@@ -21,7 +21,7 @@ SMODS.Joker{ --MONIKA
         }
     },
     pos = {
-        x = 3,
+        x = 0,
         y = 0
     },
     display_size = {
@@ -59,7 +59,7 @@ SMODS.Joker{ --MONIKA
         if context.individual and context.cardarea == G.play  then
             return {
                 repetitions = 1,
-                message = "just monika",
+                message = localize('k_again_ex'),
                 extra = {
                     Xmult = card.ability.extra.Xmult
                 }
@@ -70,7 +70,8 @@ SMODS.Joker{ --MONIKA
                 func = function()
                     card.ability.extra.Xmult = (card.ability.extra.Xmult) + 0.5
                     return true
-                end
+                end,
+                message = "deleted"
             }
         end
         if context.after and context.cardarea == G.jokers  then
@@ -96,7 +97,7 @@ SMODS.Joker{ --MONIKA
                     delay(0.6)
                     
                     if created_consumable then
-                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_tarot'), colour = G.C.PURPLE})
+                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "just monika", colour = G.C.PURPLE})
                     end
                     return true
                 end

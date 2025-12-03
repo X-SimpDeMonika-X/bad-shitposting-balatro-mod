@@ -4,6 +4,7 @@ SMODS.Joker{ --PERKEO+
     config = {
         extra = {
             s = 0,
+            repetitions = 1,
             text = 0
         }
     },
@@ -18,7 +19,7 @@ SMODS.Joker{ --PERKEO+
     },
     pos = {
         x = 2,
-        y = 3
+        y = 4
     },
     display_size = {
         w = 71 * 1, 
@@ -54,7 +55,7 @@ SMODS.Joker{ --PERKEO+
     calculate = function(self, card, context)
         if context.ending_shop  then
             if true then
-                for i = 1, G.GAME.round_resets.ante do
+                for i = 1, card.ability.extra.repetitions do
                     SMODS.calculate_effect({func = function()
                         local target_cards = {}
                         for i, consumable in ipairs(G.consumeables.cards) do
@@ -73,7 +74,7 @@ SMODS.Joker{ --PERKEO+
                                     return true
                                 end
                             }))
-                            card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Copied Consumable!", colour = G.C.GREEN})
+                            card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "COPY =)", colour = G.C.GREEN})
                         end
                         return true
                     end}, card)

@@ -3,7 +3,7 @@ SMODS.Joker{ --New Joker
     key = "newjoker",
     config = {
         extra = {
-            odds = "10",
+            odds = 10,
             mult0 = 100,
             text = 0
         }
@@ -18,7 +18,7 @@ SMODS.Joker{ --New Joker
         }
     },
     pos = {
-        x = 0,
+        x = 1,
         y = 2
     },
     display_size = {

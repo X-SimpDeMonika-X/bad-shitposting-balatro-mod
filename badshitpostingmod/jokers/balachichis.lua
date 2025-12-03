@@ -16,7 +16,7 @@ SMODS.Joker{ --Balachichis
         }
     },
     pos = {
-        x = 1,
+        x = 2,
         y = 2
     },
     display_size = {
@@ -31,6 +31,7 @@ SMODS.Joker{ --Balachichis
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["badshit_woman_jokers"] = true },
     
     calculate = function(self, card, context)
         if context.cardarea == G.hand and not context.end_of_round  then

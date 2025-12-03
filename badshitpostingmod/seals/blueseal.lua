@@ -4,7 +4,7 @@ SMODS.Seal {
     pos = { x = 1, y = 0 },
     config = {
         extra = {
-            xmult0 = 1.5
+            xchips0 = 1.5
         }
     },
     badge_colour = HEX('1E90FF'),
@@ -22,7 +22,7 @@ SMODS.Seal {
     calculate = function(self, card, context)
         if context.cardarea == G.hand and context.main_scoring then
             return {
-                Xmult = 1.5
+                x_chips = 1.5
             }
         end
     end

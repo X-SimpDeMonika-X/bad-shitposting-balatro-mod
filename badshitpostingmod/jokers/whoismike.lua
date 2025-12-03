@@ -18,7 +18,7 @@ SMODS.Joker{ --WHO IS MIKE ?!
         }
     },
     pos = {
-        x = 4,
+        x = 5,
         y = 2
     },
     display_size = {

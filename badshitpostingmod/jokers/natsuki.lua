@@ -3,7 +3,7 @@ SMODS.Joker{ --Natsuki
     key = "natsuki",
     config = {
         extra = {
-            odds = "3",
+            odds = 3,
             n = 0
         }
     },

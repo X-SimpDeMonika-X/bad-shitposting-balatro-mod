@@ -4,7 +4,7 @@ SMODS.Joker{ --Comediant
     config = {
         extra = {
             xmult0 = 50,
-            odds = "9999",
+            odds = 9995,
             no = 0,
             start_dissolve = 0
         }
@@ -21,7 +21,7 @@ SMODS.Joker{ --Comediant
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 2
     },
     display_size = {
@@ -32,7 +32,7 @@ SMODS.Joker{ --Comediant
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = false,
-    perishable_compat = true,
+    perishable_compat = false,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
@@ -59,7 +59,7 @@ SMODS.Joker{ --Comediant
         end
         if context.end_of_round and context.game_over == false and context.main_eval  and not context.blueprint then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_9acfd6c7', 1, card.ability.extra.odds, 'j_badshit_comediant', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_9acfd6c7', 1, card.ability.extra.odds, 'j_badshit_comediant', true) then
                     SMODS.calculate_effect({func = function()
                         local target_joker = card
                         

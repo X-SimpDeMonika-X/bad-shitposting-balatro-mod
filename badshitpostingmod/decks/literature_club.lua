@@ -20,7 +20,7 @@ SMODS.Back {
                 play_sound('timpani')
                 if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
                     G.GAME.joker_buffer = G.GAME.joker_buffer + 1
-                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_( monika_joker )' })
+                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_monika' })
                     if new_joker then
                     end
                     G.GAME.joker_buffer = 0
@@ -33,7 +33,7 @@ SMODS.Back {
                 play_sound('timpani')
                 if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
                     G.GAME.joker_buffer = G.GAME.joker_buffer + 1
-                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_( sayori_joker )' })
+                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_sayori' })
                     if new_joker then
                     end
                     G.GAME.joker_buffer = 0
@@ -46,7 +46,7 @@ SMODS.Back {
                 play_sound('timpani')
                 if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
                     G.GAME.joker_buffer = G.GAME.joker_buffer + 1
-                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_( natsuki_joker )' })
+                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_natsuki' })
                     if new_joker then
                     end
                     G.GAME.joker_buffer = 0
@@ -59,7 +59,7 @@ SMODS.Back {
                 play_sound('timpani')
                 if #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
                     G.GAME.joker_buffer = G.GAME.joker_buffer + 1
-                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_( yuri_joker )' })
+                    local new_joker = SMODS.add_card({ set = 'Joker', key = 'j_yuri' })
                     if new_joker then
                     end
                     G.GAME.joker_buffer = 0

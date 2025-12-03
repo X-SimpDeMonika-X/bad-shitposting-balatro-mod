@@ -19,8 +19,8 @@ SMODS.Joker{ --YORICK+
         }
     },
     pos = {
-        x = 0,
-        y = 3
+        x = 1,
+        y = 4
     },
     display_size = {
         w = 71 * 1, 
@@ -58,7 +58,7 @@ SMODS.Joker{ --YORICK+
             if to_big(G.GAME.current_round.hands_left) == to_big(1) then
                 card.ability.extra.MULTI = (card.ability.extra.MULTI) + 23
                 return {
-                    Xmult = card.ability.extra.undefined
+                    Xmult = card.ability.extra.MULTI_value
                 }
             elseif not (to_big(G.GAME.current_round.hands_left) == to_big(1)) then
                 return {

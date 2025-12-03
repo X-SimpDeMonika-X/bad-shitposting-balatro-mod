@@ -17,7 +17,7 @@ SMODS.Joker{ --Jolly Wee Joker
         }
     },
     pos = {
-        x = 7,
+        x = 8,
         y = 0
     },
     display_size = {

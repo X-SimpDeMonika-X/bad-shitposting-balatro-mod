@@ -17,7 +17,7 @@ SMODS.Joker{ --SUSIEs IDEA
         }
     },
     pos = {
-        x = 7,
+        x = 8,
         y = 2
     },
     display_size = {
@@ -26,13 +26,13 @@ SMODS.Joker{ --SUSIEs IDEA
     },
     cost = 5,
     rarity = 3,
-    blueprint_compat = true,
+    blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["badshit_badshit_jokers"] = true },
+    pools = { ["badshit_woman_jokers"] = true },
     in_pool = function(self, args)
         return (
             not args 

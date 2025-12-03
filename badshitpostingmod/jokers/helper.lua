@@ -18,7 +18,7 @@ SMODS.Joker{ --Helper
         }
     },
     pos = {
-        x = 4,
+        x = 6,
         y = 1
     },
     display_size = {
@@ -108,7 +108,7 @@ SMODS.Joker{ --Helper
                                 }))
                             end
                             if created_joker then
-                                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_joker'), colour = G.C.BLUE})
+                                card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "you are welcome", colour = G.C.BLUE})
                             end
                             return true
                         end,

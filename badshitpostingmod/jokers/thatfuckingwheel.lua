@@ -18,7 +18,7 @@ SMODS.Joker{ --That fucking wheel
         }
     },
     pos = {
-        x = 8,
+        x = 9,
         y = 2
     },
     display_size = {
@@ -42,7 +42,7 @@ SMODS.Joker{ --That fucking wheel
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                Xmult = card.ability.extra.undefined
+                Xmult = card.ability.extra.xmultvar
             }
         end
         if context.using_consumeable  then

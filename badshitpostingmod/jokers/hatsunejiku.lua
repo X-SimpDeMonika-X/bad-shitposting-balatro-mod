@@ -19,7 +19,7 @@ SMODS.Joker{ --Hatsune Jiku
         }
     },
     pos = {
-        x = 2,
+        x = 4,
         y = 1
     },
     display_size = {

@@ -22,8 +22,8 @@ SMODS.Joker{ --libitina
         }
     },
     pos = {
-        x = 9,
-        y = 2
+        x = 6,
+        y = 3
     },
     display_size = {
         w = 71 * 1, 
@@ -37,7 +37,7 @@ SMODS.Joker{ --libitina
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-    pools = { ["badshit_badshit_jokers"] = true },
+    pools = { ["badshit_woman_jokers"] = true },
     in_pool = function(self, args)
         return (
             not args 

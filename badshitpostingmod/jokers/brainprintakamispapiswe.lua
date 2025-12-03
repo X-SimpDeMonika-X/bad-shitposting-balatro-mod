@@ -15,8 +15,8 @@ SMODS.Joker{ --Brainprint (aka mis papis we)
         }
     },
     pos = {
-        x = 8,
-        y = 0
+        x = 0,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 

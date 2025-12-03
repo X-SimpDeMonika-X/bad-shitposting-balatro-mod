@@ -18,7 +18,7 @@ SMODS.Joker{ --RIXARDONES
     },
     pos = {
         x = 5,
-        y = 3
+        y = 4
     },
     display_size = {
         w = 71 * 1, 
@@ -35,7 +35,7 @@ SMODS.Joker{ --RIXARDONES
     pools = { ["badshit_badshit_jokers"] = true },
     soul_pos = {
         x = 6,
-        y = 3
+        y = 4
     },
     in_pool = function(self, args)
         return (
@@ -93,7 +93,7 @@ SMODS.Joker{ --RIXARDONES
         end
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                x_chips = card.ability.extra.COOL
+                Xmult = card.ability.extra.COOL
             }
         end
     end

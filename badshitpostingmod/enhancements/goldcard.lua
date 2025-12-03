@@ -25,7 +25,7 @@ SMODS.Enhancement {
     no_collection = false,
     weight = 1.5,
     calculate = function(self, card, context)
-        if context.end_of_round and context.cardarea == G.hand and context.other_card == card and context.individual then
+        if context.cardarea == G.hand and context.main_scoring then
             return {
                 
                 func = function()

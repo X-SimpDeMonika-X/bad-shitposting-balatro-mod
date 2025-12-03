@@ -76,7 +76,7 @@ local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
 
-local jokerIndexList = {27,23,35,22,13,1,19,3,8,18,30,16,5,17,14,7,32,6,21,24,2,10,12,33,11,15,28,29,20,34,31,25,9,4,26}
+local jokerIndexList = {29,30,45,35,16,18,2,25,10,4,24,39,7,21,19,22,9,41,28,8,31,3,12,15,42,13,20,37,38,23,1,43,26,5,14,27,36,17,33,40,44,32,11,6,34}
 
 local function load_jokers_folder()
     local mod_path = SMODS.current_mod.path
@@ -91,7 +91,7 @@ local function load_jokers_folder()
 end
 
 
-local consumableIndexList = {1,3,2,4}
+local consumableIndexList = {1,4,3,5,2}
 
 local function load_consumables_folder()
     local mod_path = SMODS.current_mod.path
@@ -177,7 +177,7 @@ local function load_vouchers_folder()
 end
 
 
-local deckIndexList = {1}
+local deckIndexList = {3,2,1}
 
 local function load_decks_folder()
     local mod_path = SMODS.current_mod.path
@@ -204,6 +204,7 @@ local function load_boosters_file()
 end
 
 load_boosters_file()
+assert(SMODS.load_file("sounds.lua"))()
 load_jokers_folder()
 load_consumables_folder()
 load_enhancements_folder()
@@ -227,6 +228,24 @@ SMODS.ObjectType({
 })
 
 SMODS.ObjectType({
+    key = "badshit_badshit_jokers",
+    cards = {
+        ["j_badshit_angrybird"] = true,
+        ["j_badshit_cat"] = true,
+        ["j_badshit_chad"] = true,
+        ["j_badshit_chaostheory"] = true,
+        ["j_badshit_door"] = true,
+        ["j_badshit_drjoker"] = true,
+        ["j_badshit_evolutionjoker"] = true,
+        ["j_badshit_gaster"] = true,
+        ["j_badshit_grostree"] = true,
+        ["j_badshit_itsgoonoclock"] = true,
+        ["j_badshit_newjoker"] = true,
+        ["j_badshit_rixardones"] = true
+    },
+})
+
+SMODS.ObjectType({
     key = "badshit_mycustom_jokers",
     cards = {
         ["j_badshit_baddrawofajoker"] = true,
@@ -243,29 +262,20 @@ SMODS.ObjectType({
 })
 
 SMODS.ObjectType({
-    key = "badshit_badshit_jokers",
-    cards = {
-        ["j_badshit_cat"] = true,
-        ["j_badshit_chad"] = true,
-        ["j_badshit_chaostheory"] = true,
-        ["j_badshit_drjoker"] = true,
-        ["j_badshit_evolutionjoker"] = true,
-        ["j_badshit_grostree"] = true,
-        ["j_badshit_libitina"] = true,
-        ["j_badshit_newjoker"] = true,
-        ["j_badshit_rixardones"] = true,
-        ["j_badshit_susiesidea"] = true
-    },
-})
-
-SMODS.ObjectType({
     key = "badshit_woman_jokers",
     cards = {
+        ["j_badshit_balachichis"] = true,
+        ["j_badshit_chara"] = true,
+        ["j_badshit_girlfriendfnf"] = true,
         ["j_badshit_hatsunejiku"] = true,
         ["j_badshit_jenny"] = true,
+        ["j_badshit_libitina"] = true,
         ["j_badshit_monika"] = true,
         ["j_badshit_natsuki"] = true,
-        ["j_badshit_sayori"] = true
+        ["j_badshit_prenerfmiku"] = true,
+        ["j_badshit_sayori"] = true,
+        ["j_badshit_susiesidea"] = true,
+        ["j_badshit_yongjokera"] = true
     },
 })
 

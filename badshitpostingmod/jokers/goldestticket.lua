@@ -34,7 +34,7 @@ SMODS.Joker{ --Goldest Ticket
     
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
-            if SMODS.get_enhancements(context.other_card)["m_badshit_coolergoldcard"] == true then
+            if SMODS.get_enhancements(context.other_card)["m_badshit_goldcard"] == true then
                 return {
                     
                     func = function()

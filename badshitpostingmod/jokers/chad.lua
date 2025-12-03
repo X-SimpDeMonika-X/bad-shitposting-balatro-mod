@@ -3,6 +3,7 @@ SMODS.Joker{ --CHAD
     key = "chad",
     config = {
         extra = {
+            repetitions = 10,
             repetitions0 = 1
         }
     },
@@ -16,8 +17,8 @@ SMODS.Joker{ --CHAD
         }
     },
     pos = {
-        x = 8,
-        y = 1
+        x = 0,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 

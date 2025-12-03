@@ -3,16 +3,16 @@ SMODS.Joker{ --Bad draw of a joker
     key = "baddrawofajoker",
     config = {
         extra = {
-            odds = "2",
-            odds2 = "4",
-            odds3 = "6",
-            odds4 = "8",
-            odds5 = "40",
+            odds = 2,
+            odds2 = 4,
+            odds3 = 6,
+            odds4 = 8,
+            odds5 = 40,
             mult0 = 4,
             mult = 16,
             mult2 = 32,
             mult3 = 64,
-            echips0 = 40
+            emult0 = 4000
         }
     },
     loc_txt = {
@@ -28,7 +28,7 @@ SMODS.Joker{ --Bad draw of a joker
         }
     },
     pos = {
-        x = 6,
+        x = 7,
         y = 0
     },
     display_size = {
@@ -66,20 +66,20 @@ SMODS.Joker{ --Bad draw of a joker
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_a206bf05', 1, card.ability.extra.odds, 'j_badshit_baddrawofajoker', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_eea7b17e', 1, card.ability.extra.odds, 'j_badshit_baddrawofajoker', false) then
                     SMODS.calculate_effect({mult = 4}, card)
                 end
-                if SMODS.pseudorandom_probability(card, 'group_1_77e7d353', 1, card.ability.extra.odds2, 'j_badshit_baddrawofajoker', false) then
+                if SMODS.pseudorandom_probability(card, 'group_1_84c3e631', 1, card.ability.extra.odds2, 'j_badshit_baddrawofajoker', false) then
                     SMODS.calculate_effect({mult = 16}, card)
                 end
-                if SMODS.pseudorandom_probability(card, 'group_2_bdb0407e', 1, card.ability.extra.odds3, 'j_badshit_baddrawofajoker', false) then
+                if SMODS.pseudorandom_probability(card, 'group_2_ec60544e', 1, card.ability.extra.odds3, 'j_badshit_baddrawofajoker', false) then
                     SMODS.calculate_effect({mult = 32}, card)
                 end
-                if SMODS.pseudorandom_probability(card, 'group_3_42a3195c', 1, card.ability.extra.odds4, 'j_badshit_baddrawofajoker', false) then
+                if SMODS.pseudorandom_probability(card, 'group_3_93446f8d', 1, card.ability.extra.odds4, 'j_badshit_baddrawofajoker', false) then
                     SMODS.calculate_effect({mult = 64}, card)
                 end
-                if SMODS.pseudorandom_probability(card, 'group_4_cc781cc4', 1, card.ability.extra.odds5, 'j_badshit_baddrawofajoker', true) then
-                    SMODS.calculate_effect({e_chips = 40}, card)
+                if SMODS.pseudorandom_probability(card, 'group_4_b32cf0d8', 1, card.ability.extra.odds5, 'j_badshit_baddrawofajoker', false) then
+                    SMODS.calculate_effect({e_mult = 4000}, card)
                 end
             end
         end

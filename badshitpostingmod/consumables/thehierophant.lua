@@ -46,7 +46,7 @@ SMODS.Consumable {
                     trigger = 'after',
                     delay = 0.1,
                     func = function()
-                        G.hand.highlighted[i]:set_seal("badshit_metalseal", nil, true)
+                        G.hand.highlighted[i]:set_seal("badshit_blueseal", nil, true)
                         return true
                     end
                 }))

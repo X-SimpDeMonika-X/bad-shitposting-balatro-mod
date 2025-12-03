@@ -34,6 +34,7 @@ SMODS.Joker{ --Chara
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["badshit_woman_jokers"] = true },
     
     calculate = function(self, card, context)
         if context.destroy_card and context.destroy_card.should_destroy and not context.blueprint then
